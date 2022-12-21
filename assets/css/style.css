@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233deg, 47%, 7%);
+  color: white;
+  margin: 90px 0;
+}
+
+p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: auto;
+  background-color: hsl(244deg, 38%, 16%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .img {
+  background-image: linear-gradient(rgba(157, 83, 199, 0.5), rgba(157, 83, 199, 0.5)), url("../images/image-header-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 100%;
+  margin-bottom: 45px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .content p, main section .content h1 {
+  text-align: center;
+  width: 230px;
+}
+main section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .content h1 {
+  margin-bottom: 22px;
+}
+main section .content h1 strong {
+  color: hsl(277deg, 64%, 61%);
+}
+main section .content p {
+  font-size: 12.5px;
+  line-height: 23px;
+  width: 214px;
+  margin-bottom: 35px;
+}
+main section .infos {
+  display: flex;
+  flex-direction: column;
+}
+main section .infos .info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main section .infos .info p.number {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+main section .infos .info p:not(.number) {
+  text-transform: uppercase;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+
+
+@media (min-width: 370px) and (max-width: 760px) {
+  main section .content h1 {
+    font-size: 27px;
+    width: 260px;
+  }
+  main section .content p {
+    font-size: 15px;
+    width: 255px;
+  }
+}
+
+
+@media (min-width: 761px) and (max-width: 1130px) {
+  body {
+    height: 100vh;
+    margin: 0;
+  }
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    height: 445px;
+    border-radius: 0;
+    border-radius: 10px;
+  }
+  main .img {
+    background-image: linear-gradient(rgba(157, 83, 199, 0.5), rgba(157, 83, 199, 0.5)), url("../images/image-header-desktop.jpg");
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+  main section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main section .content h1 {
+    text-align: initial;
+    width: 300px;
+    font-size: 25px;
+    margin-top: 45px;
+  }
+  main section .content p {
+    text-align: initial;
+    font-size: 12px;
+    width: 314px;
+    margin-bottom: 50px;
+  }
+  main section .infos {
+    flex-direction: row;
+  }
+  main section .infos .info {
+    text-align: left;
+    margin-right: 25px;
+  }
+  main section .infos .info p:not(.number) {
+    font-size: 12px;
+  }
+  main section .infos .info p.number {
+    font-size: 23px;
+  }
+}
+
+
+@media (min-width: 1140px) {
+  body {
+    height: 100vh;
+    margin: 0;
+  }
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    height: 445px;
+    border-radius: 0;
+    border-radius: 10px;
+  }
+  main .img {
+    background-image: linear-gradient(rgba(157, 83, 199, 0.5), rgba(157, 83, 199, 0.5)), url("../images/image-header-desktop.jpg");
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+  }
+  main section .content h1, main section .content p {
+    text-align: initial;
+  }
+  main section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main section .content h1 {
+    width: 350px;
+    font-size: 33px;
+    margin-top: 40px;
+    margin-bottom: 28px;
+  }
+  main section .content p {
+    font-size: 13px;
+    width: 337px;
+    margin-bottom: 80px;
+  }
+  main section .infos {
+    flex-direction: row;
+  }
+  main section .infos .info {
+    text-align: left;
+    margin-right: 50px;
+  }
+}
