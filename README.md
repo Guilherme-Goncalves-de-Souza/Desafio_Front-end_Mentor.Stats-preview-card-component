@@ -22,7 +22,7 @@ Desktop design:            | Mobile design:
   
   <br><br>
 
-  <a href = "https://guilherme-goncalves-de-souza.github.io/Desafio_Front-end_Mentor.Product-preview-card-component/"> Veja o projeto aqui. </a>
+  <a href = "https://guilherme-goncalves-de-souza.github.io/Desafio_Front-end_Mentor.Stats-preview-card-component/"> Veja o projeto aqui. </a>
 </div>
 
 
