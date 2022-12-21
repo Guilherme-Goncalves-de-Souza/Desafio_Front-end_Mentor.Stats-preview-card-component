@@ -1,0 +1,284 @@
+$inter: 'Inter', sans-serif;
+$lexend-deca: 'Lexend Deca', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: $inter;
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+
+    margin: 90px 0;
+
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: $lexend-deca;
+    font-weight: 400;
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    height: auto;
+    background-color: hsl(244, 38%, 16%);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    .img{
+        background-image: 
+            linear-gradient(
+        rgba(157, 83, 199, 0.5),rgba(157, 83, 199, 0.5)
+            ),
+            url("../images/image-header-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 15rem;
+        width: 100%;
+
+        margin-bottom: 45px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        %center{
+            text-align: center;
+            width: 230px;
+        }
+
+        .content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+                @extend %center;
+                margin-bottom: 22px;
+    
+                strong{
+                    color: hsl(277, 64%, 61%);
+                }
+            }
+    
+            p{
+                @extend %center;
+                font-size: 12.5px;
+                line-height: 23px;
+                width: 214px;
+                margin-bottom: 35px;
+            }
+        }
+
+        .infos{
+            display: flex;
+            flex-direction: column;
+
+            .info{
+                text-align: center;
+                margin-bottom: 30px;
+
+                p.number{
+                    color: white;
+                    margin-bottom: 5px;
+                    font-size: 24px;
+                }
+                p:not(.number){
+                    text-transform: uppercase;
+                    color: hsla(0, 0%, 100%, 0.6);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 370px) and (max-width: 760px){    
+    main{
+    
+        section{
+            .content{
+                h1{
+                    font-size: 27px;
+                    width: 260px;
+                }
+        
+                p{
+                    font-size: 15px;
+                    width: 255px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 761px) and (max-width: 1130px){
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+    main{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
+        width: 80%;
+        height: 445px;
+        
+        border-radius: 0;
+        border-radius: 10px;
+        
+        .img{
+            background-image: 
+                linear-gradient(
+                rgba(157, 83, 199, 0.5),rgba(157, 83, 199, 0.5)
+                ),
+                url("../images/image-header-desktop.jpg");
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            border-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 30px;
+    
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                h1{
+                    text-align: initial;
+                    width: 300px;
+                    font-size: 25px;
+                    margin-top: 45px;
+                }
+        
+                p{
+                    text-align: initial;
+                    font-size: 12px;
+                    width: 314px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .infos{
+                flex-direction: row;
+
+                .info{
+                    text-align: left;
+                    margin-right: 25px;
+
+                    p:not(.number){
+                        font-size: 12px;
+                    }
+
+                    p.number{
+                        font-size: 23px;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media(min-width: 1140px){    
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+    main{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
+        width: 80%;
+        height: 445px;
+        
+        border-radius: 0;
+        border-radius: 10px;
+        
+        .img{
+            background-image: 
+                linear-gradient(
+                    rgba(157, 83, 199, 0.5),rgba(157, 83, 199, 0.5)
+                ),
+                url("../images/image-header-desktop.jpg");
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            border-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            margin-left: 70px;
+    
+            %center{
+                text-align: initial;
+            }
+    
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+    
+                h1{
+                    width: 350px;
+                    font-size: 33px;
+                    margin-top: 40px;
+                    margin-bottom: 28px;
+                }
+        
+                p{
+                    @extend %center;
+                    font-size: 13px;
+                    width: 337px;
+                    margin-bottom: 80px;
+                }
+            }
+
+            .infos{
+                flex-direction: row;
+
+                .info{
+                    text-align: left;
+                    margin-right: 50px;
+                }
+            }
+    
+        }
+    }
+}
